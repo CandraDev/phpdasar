@@ -26,15 +26,6 @@ function addMov($data){
     $genre = htmlspecialchars($data['genre']);
     $runtime = htmlspecialchars($data['runtime']);
 
-    // if(empty($title) == 1 || empty($year) == 1 || empty($genre) == 1 ||
-    //     empty($runtime) == 1 || empty($poster) == 1) {
-    //         echo "<script>
-    //             alert('ERR: Make sure all of the datas was fully assigned!);
-    //         </script>";
-    //         header('Location: add.php');
-    //         die();
-    //     }
-
     $poster = upload();
     if( !$poster ){
         return false;
@@ -122,20 +113,29 @@ function userRegist($data){
     $username = strtolower(stripslashes($data['username']));
     $password = mysqli_real_escape_string($conn, $data['password']);
     $password2 = mysqli_real_escape_string($conn, $data['password2']);
+
+    $result = mysqli_query($conn, "SELECT username FROM users WHERE username = '$username'");
+
+    if(mysqli_fetch_assoc($result)){
+        echo "
+            <script>
+                alert('Username already exist');
+            </script>
+        ";
+        return false;
+    }
     
     if ($password !== $password2) {
         echo "<script>
-            alert('Konfirmasi password tidak sesuai!');
+            alert('Confirmation password is invalid!');
         </script>";
         return false;
-    } else {
-        echo mysqli_error($conn);
     }
 
     $password = password_hash($password, PASSWORD_DEFAULT);
-    var_dump($password);
+    mysqli_query($conn, "INSERT INTO users VALUES ('', '$username', '$password')");
 
-    return 1;
+    return mysqli_affected_rows($conn);
 }
 
 ?>
