@@ -1,0 +1,40 @@
+Belajar PHP Untuk Pemula - Sandhika Galih
+
+~ Kenapa PHP?
+1. Relatif Mudah untuk Pemula. Simple, To The Point.
+2. Pre-Requisite hanya HTML & CSS
+3. Gratis & Open Source
+4. Komunitas yang Besar. Dipakai banyak orang.
+5. Dokumentasi yang Lengkap. Tak perlu tutorial, di website PHP saja sdh lengkap.
+6. PHP dibuat khusus untuk website.
+7. Bahasa Website paling populer di 2017.
+8. Banyak website yang awalnya PHP -> Facebook, Yahoo, Wikipedia, Flickr.
+9. Content Management System PHP ada beragam -> Wordpress, Joomla, Drupal, Moodle.
+10. Banyak Framework PHP yang bagus untuk mempermudah membuat website. -> CodeIgniter, CakePHP, Laravel, dll.
+Tak perlu gentar dengan stereotipe PHP, yakin dengan alasan-alasan ini.
+
+~ Apa yang akan dipelajari di PHP?
++ Client vs. Server-Side Scripting
++ Static vs. Dynamic Website
++ Persiapan Lingkungan Pengembangan
++ Sintaks PHP
++ Array, paling penting di PHP. (Everything is Array)
++ Request Method.
++ Studi Kasus Website Sederhana.
++ Database
++ CRUD (Create, Read, Update, Delete)
++ Login & Registrasi
++ Session & Cookie
++ AJAX
++ Upload File
++ Reporting
++ Web Hosting
+
+~ Apa yang harus disiapkan?
++ Code Editor -> VS Code, Atom, Dll.
++ Web Server -> Apache
++ Web Browser -> Chrome, Firefox, dll
++ Database Server -> MySQL
+
+
+~ Apa kalian sudah siap? KUY BELAJAR!

@@ -1,0 +1,17 @@
+Lingkungan Perkembangan PHP - Sandhika Galih
+
+~ Client Side Scripting
+HTML CSS Javascript. Semuanya terjadi di Client.
+
+~ Server Side Scripting
+Web Browser <-> Web Server <-> PHP, ASP, Ruby, Python, <-> Database
+
+Ini menyulitkan untuk mencontek. Karena semua pemrosessannya terjadi di server.
+Script PHP ga mudah untuk di contek.
+Bisa tersambung ke database.
+
+~ Lingkungan Perkembangan Server Side Scripting.
+1. Web Server -> Apache
+2. Bahasa Pemrograman -> PHP
+3. Database -> MySQL
+ Atau bisa All in One Packages -> XAMPP (ini semua dapet.)

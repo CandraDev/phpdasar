@@ -1,0 +1,29 @@
+Sejarah dan Karakteristik PHP - Sandhika Galih
+
+~ Sejarah PHP
+PHP dibuat oleh Rasmus Lerdorf pada tahun 1994. Awalnya dia membuat program dalam bahasa C untuk mengelola personal home page-nya. Awalnya PHP itu Personal Home Page. Didalam web-nya ada form yang dihubungkan dengan database. 
+
+PHP/FI, - 1994 = Personal Home Page/Form Interpreter
+PHP Tools v.1, 1995 
+PHP Tools v.2, 1997   (Karna open source banyak ngembangin.
+PHP 3, 1998 - Dikembangkan oleh Zeev Suraski & Andi Gutmans (Zend Technologies)
+	    - Namanya menjadi PHP: Hypertext Preprocessor
+PHP 4, 2000 (Zend Engine - Intrepreter)
+PHP 5, 2004 (Updatan PHP paling besar) (Zend Engine 2. - Sdh OOP)
+		(PHP Data Object, dapat mengelola database)
+2008, PHP 4 berhenti dikembangkan. (Gerakan GoPHP5)
+PHP 6, ditunda dan diabaikan.
+PHP 5 fokus dikembangkan.
+PHP 5.4, 2010.
+PHP 7, 2014 (Zend Engine 3)
+
+
+~ Icon PHP
+	elePHPant - Maskot PHP seekor gajah.
+
+~ Karakteristik PHP
+
+Ekstensi file. PHP
+Ditulis dalam tag PHP. (delimiter <?php --- ?>)
+Bisa digunakan bersamaan dengan HTML
+Mengikuti kaidah bahasa C (Case Sensitive, titik koma, dll.)

@@ -1,0 +1,24 @@
+Seputar Database - Sandhika Galih
+
+~ Apa itu Data?
+"Representasi Fakta di dunia nyata"
+
+Database = kumpulan data yang dikelompokan ke dalam tabel dan disimpan di dalam DBMS
+DBMS = software untuk mengelola database  ( MY SQL) 
+Relational DBMS = keterhubungan antar data biasanya di dalam tabel
+
+Field / column = judul yang berisi data data dibawahnya misalnya field "nama" = sandhika, dody, dll, field juga memiliki tipe data dengan aturan tertentu
+
+Record/ baris = kumpulan data field yang disusun secara horizontal ( 1 record = 1 baris pada tabel data ) 
+
+Primary key = sebuah data yang mereprentasikan satu baris record yang unik ( tidak boleh ada data yang sama )
+
+Tipe data : 
+
+String :
+
+- Char digunakan untuk menyimpan string dengan panjang tetap, digunakan utk karakter yg tetap seperti no induk mahasiswa
+
+- varchar digunakan untuk menyimpan string yang memiliki panjang bervariasi. Digunakan untuk karakter dinamis seperti : nama, kota
+
+Untuk bisa terhubung ke dalam database dan menggunakan DBMS = jalankan dulu server databasenya
