@@ -1,6 +1,7 @@
 <?php
 require 'functions.php';
 
+
 if(isset($_POST['register'])){
     if(userRegist($_POST) > 0) {
         echo "<script>
