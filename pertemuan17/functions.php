@@ -146,11 +146,38 @@ function userRegist($data){
     return mysqli_affected_rows($conn);
 }
 
+function checkLogin(){
+    if(isset($_COOKIE["key"])){
+        checkCookie($_COOKIE["key"], $_COOKIE["id"]);
+    }
+
+    if(!isset($_SESSION["login"])){
+        header("Location: login.php");
+        exit;
+    } 
+}
+
+function checkCookie($key, $id){
+    global $conn;
+
+    $result = mysqli_query($conn, "SELECT * FROM users WHERE id = $id");
+    $row = mysqli_fetch_assoc($result);
+
+
+    if($key === hash("sha256", $row["username"])){
+        $_SESSION["login"] = true;
+    } 
+    else {
+        unset($_SESSION["login"]);
+    }
+}
+
 function userLogin($data){
     global $conn;
 
-    $username = $data["username"];
+    $username = strtolower($data["username"]);
     $password = $data["password"];
+
 
     $result = mysqli_query($conn, "SELECT * FROM users where username = '$username'");
 
@@ -158,12 +185,15 @@ function userLogin($data){
 
     if(mysqli_num_rows($result) === 1){
         if(password_verify($password, $row["password"])){
+            if(isset($data["remember"])){
+                setcookie("key", hash("sha256", $username), time() + 60 * 60 * 24);
+                setcookie("id", $row["id"], time() + 60 * 60 * 24);
+            }
             $_SESSION["login"] = true;
-            $_SESSION["username"] = $username;
-            return true;
         }
-    } else {
-        return false;
+        
+        checkLogin();
+        return true;
     }
 }
 ?>
